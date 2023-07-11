@@ -8,6 +8,9 @@
     &__body{
         padding: 90px 0px; 
         @include flex-sb;
+        @media only screen and (max-width: 1300px) {
+            flex-direction: column;
+        }
     }
     &__content{
         &_subtitle {
@@ -15,18 +18,34 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 155.2%;
+            @media only screen and (max-width: 1300px) {
+                font-size: 16px;
+                text-align: center;
+            }
         }
+
         &_title {
             padding: 17px 0px 26px 0px;
             font-size: 50px;
             font-weight: 700;
             line-height: 155.2%;
+            @media only screen and (max-width: 1300px) {
+                font-size: 36px;
+                text-align: center;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 24px;
+            }
         }
         &_text {
             font-size: 16px;
             font-weight: 500;
             line-height: 200%;
             padding-bottom: 50px;
+            @media only screen and (max-width: 1300px) {
+                font-size: 14px;
+                text-align: center;
+            }
         }
         &_btn {
             border: none;
@@ -39,8 +58,10 @@
             line-height: normal;
             display: inline-block;
             margin-bottom: 40px;
-            @media only screen and (max-width: 786px) {
+            @media only screen and (max-width: 1300px) {
                 display: block;
+                max-width: 400px;
+                margin: 0px auto;
             }
         }
     }
