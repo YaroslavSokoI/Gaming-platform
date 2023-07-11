@@ -1,0 +1,37 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.header {
+    padding: 37px 0px;
+    .container {
+        max-width: 1320px;
+    }
+    &__body{
+        @include flex-sb;
+    }
+    &__logo{
+        font-size: 29px;
+        font-weight: 800;
+        line-height: 153.5%;
+    }
+    &__nav {
+        @include flex;
+        gap: 37px;
+    }
+    &__list {
+        display: flex;
+        gap: 88px;
+        &_item {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    &__btn {
+        background-color: $orange;
+        border-radius: 6px;
+        padding: 10px 28px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

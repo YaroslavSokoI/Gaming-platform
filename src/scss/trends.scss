@@ -1,0 +1,43 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.trends {
+    .container {
+        max-width: 1148px;
+    }
+    &__head {
+        @include flex-sb;
+    }
+    &__title {
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 187.5%;
+    }
+    &__btn {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 187.5%; 
+        padding: 10px 30px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.11);
+    }
+    &__body {
+        @include flex-sb;
+        padding: 58px 0px 130px 0px;
+    }
+    &__card {
+        @include flex-column;
+        gap: 25px;
+        &_text {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 187.5%;
+        }
+        &_text::before {
+            position: relative;
+            right: 10px;
+            top: 4px;
+            content: url('../images/fire.svg');
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin flex-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin bg-paralax {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
